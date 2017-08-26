@@ -1,7 +1,7 @@
 {
   "name": "projectair",
   "version": "1.0.0",
-  "description": "",
+  "description": "MyProject",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Musty1/projectair/issues"
   },
-  "homepage": "https://github.com/Musty1/projectair#readme"
+  "homepage": "https://github.com/Musty1/projectair#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
 }
