@@ -20,7 +20,9 @@ app.post('/users', function(req, res) {
 	user.password = req.body.password;
 	user.email = req.body.email;
 	user.save();
+	res.send('User created!');
 });
+
 
 
 app.listen(8051, function(){
