@@ -3,6 +3,10 @@ var app 		= express();
 var mongoose 	= require('mongoose');
 
 var User 		= require('./app/models/user');
+var bodyParser 	= require('body-parser');
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extend: true}));
 
 
 mongoose.connect('mongodb://0.0.0.0:27017/projectair', function(err) {
