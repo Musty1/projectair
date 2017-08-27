@@ -15,7 +15,10 @@ mongoose.connect('mongodb://0.0.0.0:27017/projectair', function(err) {
 
 
 app.post('/users', function(req, res) {
-	res.send('testing usersroute');
+	var user = new User();
+	user.username = req.body.username;
+	user.password = req.body.password;
+	user.email = req.body.email;
 });
 
 
