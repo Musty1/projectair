@@ -14,9 +14,10 @@ mongoose.connect('mongodb://0.0.0.0:27017/projectair', function(err) {
 });
 
 
-app.post('./users', function(req, res) {
+app.post('/users', function(req, res) {
 	res.send('testing usersroute');
 });
+
 
 app.listen(8051, function(){
 	console.log("Running Server on port : 8051");
