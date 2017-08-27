@@ -1,12 +1,9 @@
-var express = require('express');
-var app = express();
-var mongoose = require('mongoose');
+var express 	= require('express');
+var app 		= express();
+var mongoose 	= require('mongoose');
 
+var User 		= require('./app/models/user');
 
-/*app.get('/', function(req, res){
-	res.send("Project Air");
-})
-*/
 
 mongoose.connect('mongodb://0.0.0.0:27017/projectair', function(err) {
 	if(err){
@@ -16,6 +13,10 @@ mongoose.connect('mongodb://0.0.0.0:27017/projectair', function(err) {
 	}
 });
 
+
+app.post('./users', function(req, res) {
+	res.send('testing usersroute');
+});
 
 app.listen(8051, function(){
 	console.log("Running Server on port : 8051");
