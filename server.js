@@ -23,7 +23,7 @@ app.post('/users', function(req, res) {
 	user.username = req.body.username;
 	user.password = req.body.password;
 	user.email = req.body.email;
-	console.log('user');
+	console.log(user);
 	user.save(function(err){
 		if (err) {
 			res.send(err);
